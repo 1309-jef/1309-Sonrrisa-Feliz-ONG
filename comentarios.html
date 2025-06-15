@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Comentarios - Foro Público</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fffde7;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #fff176;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    header p {
+      font-size: 1.2em;
+    }
+
+    .comentarios {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      padding: 30px;
+    }
+
+    .comentario {
+      background-color: #fff9c4;
+      border: 2px solid #fbc02d;
+      border-radius: 12px;
+      padding: 20px;
+      width: 80%;
+      max-width: 600px;
+      box-shadow: 3px 3px 8px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+
+    .comentario h3 {
+      color: #f57f17;
+    }
+
+    .comentario p {
+      font-size: 1em;
+      line-height: 1.5;
+      color: #333;
+    }
+
+    .formulario-comentario {
+      background-color: #fff9c4;
+      border: 2px solid #fbc02d;
+      border-radius: 12px;
+      padding: 20px;
+      width: 80%;
+      max-width: 600px;
+      box-shadow: 3px 3px 8px rgba(0,0,0,0.1);
+    }
+
+    .formulario-comentario textarea {
+      width: 100%;
+      height: 120px;
+      padding: 10px;
+      border-radius: 8px;
+      border: 2px solid #fbc02d;
+      font-size: 1em;
+      color: #333;
+    }
+
+    .formulario-comentario button {
+      background-color: #fff9c4;
+      border: 2px solid #fbc02d;
+      padding: 15px 40px;
+      font-size: 1em;
+      color: #333;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .formulario-comentario button:hover {
+      background-color: #f57f17;
+    }
+
+    .boton-regreso {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .boton-regreso button {
+      padding: 15px 40px;
+      background-color: #f57f17;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .boton-regreso button:hover {
+      background-color: #fbc02d;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #fff59d;
+      margin-top: 20px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Comentarios - Foro Público</h1>
+    <p>Comparte tu experiencia y ayuda a otros con tu comentario.</p>
+  </header>
+
+  <div class="comentarios">
+    <!-- Comentarios previos -->
+    <div class="comentario">
+      <h3>Juan Pérez</h3>
+      <p>Gracias a esta página, he encontrado esperanza en momentos difíciles. La fe en Dios me ha ayudado a superar mis días oscuros. ¡Gracias!</p>
+    </div>
+
+    <div class="comentario">
+      <h3>María López</h3>
+      <p>Este sitio me ha dado paz, especialmente las enseñanzas sobre cómo superar la depresión con la ayuda de Dios. ¡Gracias por compartirlo!</p>
+    </div>
+
+    <div class="comentario">
+      <h3>Carlos Rodríguez</h3>
+      <p>La oración me ha dado fuerzas para seguir adelante. A veces solo necesitamos recordar que no estamos solos.</p>
+    </div>
+
+    <!-- Formulario para nuevo comentario -->
+    <div class="formulario-comentario">
+      <h3>Deja tu comentario:</h3>
+      <textarea placeholder="Escribe tu comentario aquí..."></textarea>
+      <br><br>
+      <button onclick="alert('Gracias por tu comentario!')">Enviar Comentario</button>
+    </div>
+  </div>
+
+  <!-- Botón para regresar a la página principal -->
+  <div class="boton-regreso">
+    <button onclick="window.location.href='index.html'">Regresar a la Página Principal</button>
+  </div>
+
+  <footer>
+    Sonrisa Feliz &copy; 2025 - Tu salud mental importa
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Comentarios - Estrés</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fffde7;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #fff176;
+      text-align: center;
+      padding: 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    header p {
+      font-size: 1.2em;
+    }
+    .comentarios {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 30px;
+    }
+    .comentario, .formulario-comentario {
+      background-color: #fff9c4;
+      border: 2px solid #fbc02d;
+      border-radius: 12px;
+      padding: 20px;
+      width: 80%;
+      max-width: 600px;
+      box-shadow: 3px 3px 8px rgba(0,0,0,0.1);
+    }
+    .comentario h3, .formulario-comentario h3 {
+      color: #f57f17;
+    }
+    .comentario p {
+      font-size: 1em;
+      color: #333;
+      line-height: 1.5;
+    }
+    .formulario-comentario textarea {
+      width: 100%;
+      height: 120px;
+      padding: 10px;
+      border-radius: 8px;
+      border: 2px solid #fbc02d;
+    }
+    .formulario-comentario button, .boton-regreso button {
+      padding: 15px 40px;
+      background-color: #f57f17;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .formulario-comentario button:hover, .boton-regreso button:hover {
+      background-color: #fbc02d;
+    }
+    .boton-regreso {
+      text-align: center;
+      margin-top: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #fff59d;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Comentarios - Estrés</h1>
+    <p>Comparte cómo has superado el estrés y alienta a otros a seguir adelante.</p>
+  </header>
+
+  <div class="comentarios">
+    <div class="comentario">
+      <h3>Daniela Ruiz</h3>
+      <p>El estrés me tenía agotada, pero comencé a orar y confiar más en Dios, y todo cambió poco a poco.</p>
+    </div>
+    <div class="comentario">
+      <h3>Andrés Mejía</h3>
+      <p>Este sitio ha sido una bendición. He aprendido a dejar mis cargas en manos de Dios.</p>
+    </div>
+    <div class="formulario-comentario">
+      <h3>Deja tu comentario:</h3>
+      <textarea placeholder="Escribe tu comentario aquí..."></textarea>
+      <br><br>
+      <button onclick="alert('Gracias por tu comentario!')">Enviar Comentario</button>
+    </div>
+  </div>
+
+  <div class="boton-regreso">
+    <button onclick="window.location.href='estres.html'">Regresar a la Página de Estrés</button>
+  </div>
+
+  <footer>
+    Sonrisa Feliz &copy; 2025 - Tu salud mental importa
+  </footer>
+
+</body>
+</html>

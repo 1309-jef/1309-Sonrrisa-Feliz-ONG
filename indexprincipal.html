@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sonrisa Feliz - Bienvenida</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <style>
+    /* Estilos generales */
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #FFEBC7, #FFF59D);
+      margin: 0;
+      padding: 0;
+      color: #4a4a4a;
+    }
+    header {
+      background-color: #FFF59D;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+      gap: 20px;
+      flex-wrap: wrap;
+      border-bottom: 5px solid #f57f17;
+    }
+    header h1 {
+      font-size: 3em;
+      color: #f57f17;
+      margin: 0;
+      text-align: center;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    }
+    header p {
+      width: 100%;
+      text-align: center;
+      font-size: 1.4em;
+      color: #333;
+      margin-top: 10px;
+    }
+    .logo {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      animation: girar 5s linear infinite;
+    }
+    @keyframes girar {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .botones-principales {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      padding: 40px;
+    }
+    .botones-principales button {
+      padding: 25px 50px;
+      font-size: 1.3em;
+      background-color: #FFF9C4;
+      border: 2px solid #fbc02d;
+      color: #333;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .botones-principales button:hover {
+      background-color: #f57f17;
+      transform: scale(1.05);
+    }
+    .mensaje {
+      background-color: #FFEBC7;
+      padding: 50px;
+      text-align: center;
+      font-size: 1.3em;
+      color: #333;
+      margin: 40px 20px;
+      border-radius: 12px;
+      box-shadow: 3px 3px 15px rgba(0,0,0,0.1);
+    }
+    .mensaje h2 {
+      color: #f57f17;
+      font-size: 2.5em;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+    .mensaje p {
+      line-height: 1.8;
+      font-style: italic;
+      font-size: 1.1em;
+    }
+    .video-container {
+      display: flex;
+      justify-content: center;
+      padding: 30px;
+      margin-bottom: 50px;
+    }
+
+    .video-container video {
+      width: 50%;
+      height: auto;
+      border-radius: 12px;
+    }
+    .galeria-fotos {
+      display: flex;
+      justify-content: space-evenly;
+      margin: 40px 20px;
+    }
+    .galeria-fotos img {
+      width: 30%;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #FFF59D;
+      margin-top: 20px;
+      font-size: 1.1em;
+      color: #333;
+    }
+    /* Sección de Historia, Misión, Visión y Valores */
+    .seccion-mision {
+      background-color: #fff9c4;
+      padding: 40px;
+      margin: 40px 20px;
+      border-radius: 12px;
+      box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
+    }
+    .seccion-mision h2 {
+      text-align: center;
+      color: #f57f17;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    .seccion-mision h3 {
+      color: #f57f17;
+      font-size: 1.8em;
+    }
+    .seccion-mision p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      text-align: center;
+    }
+    /* Botón de Depresión */
+    .depresion-button {
+      display: inline-block;
+      padding: 15px 35px;
+      font-size: 1.2em;
+      background-color: #f57f17;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      margin-top: 20px;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+    .depresion-button:hover {
+      background-color: #ff7043;
+      transform: scale(1.1);
+    }
+    /* Redes sociales flotantes */
+    .social-icons {
+      position: fixed;
+      right: 20px;
+      bottom: 50px;
+      z-index: 1000;
+    }
+    .social-icons a {
+      display: block;
+      margin-bottom: 10px;
+      padding: 15px;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 24px;
+      color: white;
+      transition: all 0.3s ease;
+    }
+    .whatsapp { background-color: #25D366; }
+    .facebook { background-color: #1877F2; }
+    .instagram { background-color: #E4405F; }
+    .tiktok { background-color: #000000; }
+    .social-icons a:hover {
+      transform: scale(1.5);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .mensaje-estetica {
+  background: linear-gradient(145deg, #fff8e1, #fff3c1);
+  border-left: 10px solid #fbc02d;
+  border-right: 10px solid #fbc02d;
+  position: relative;
+}
+
+.icono-espiritual {
+  font-size: 50px;
+  color: #f57f17;
+  margin-bottom: 10px;
+}
+
+.linea-decorativa {
+  width: 60px;
+  border: 3px solid #f57f17;
+  margin: 20px auto;
+  border-radius: 2px;
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="Logo Sonrisa Feliz" class="logo">
+    <h1>Sonrisa Feliz</h1>
+    <p>Sanando tu salud mental con el amor de Dios</p>
+  </header>
+
+  <!-- Botones principales -->
+  <div class="botones-principales">
+    <button onclick="window.location.href='ansiedad.html'">Ansiedad</button>
+    <button onclick="window.location.href='estres.html'">Estrés</button>
+    <button onclick="window.location.href='index.html'">Depresión</button>
+  </div>
+
+<!-- Mensaje espiritual -->
+<div class="mensaje mensaje-estetica">
+  <div class="icono-espiritual"><i class="fas fa-dove"></i></div>
+  <h2>Con Dios todo es posible</h2>
+  <hr class="linea-decorativa">
+  <p>
+    Aunque las sombras del <strong>estrés</strong> o la <strong>ansiedad</strong> puedan nublar tu camino, el amor y la paz de Dios son luz para tu alma. Él te acompaña en cada paso, en cada oración, y te da fuerza para superar cualquier desafío.<br><br>
+    <em>Permítete sentir su abrazo y confiar en su plan para ti. ¡Tú eres amado y valioso!</em>
+  </p>
+</div>
+
+
+  <!-- Video motivacional desde tu galería -->
+  <div class="video-container">
+    <video controls>
+      <source src="vi.mp4" type="video/mp4">
+      Tu navegador no soporta el elemento de video.
+    </video>
+  </div>
+
+  <!-- Galería de fotos -->
+  <div class="galeria-fotos">
+    <img src="in1.jpeg" alt="Foto 1">
+    <img src="an2.jpg" alt="Foto 2">
+    <img src="in3.jpeg" alt="Foto 3">
+  </div>
+
+  <!-- Botón para acceder a la historia, misión, visión y valores -->
+  <div style="text-align: center;">
+    <a href="historia_mision_vision.html" class="depresion-button">Nuestra Historia, Misión, Visión y Valores</a>
+  </div>
+
+  <!-- Redes sociales -->
+  <div class="social-icons">
+    <a href="https://wa.me/1234567890" class="whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://www.facebook.com/tu_pagina" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/tu_perfil" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.tiktok.com/@tu_usuario" class="tiktok" target="_blank"><i class="fab fa-tiktok"></i></a>
+  </div>
+
+  <footer>
+    Sonrisa Feliz &copy; 2025 - Tu bienestar emocional es nuestra misión. ¡Confiemos en Dios!
+  </footer>
+
+</body>
+</html>

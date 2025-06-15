@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sonrisa Feliz – Ansiedad</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Iconos FontAwesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <style>
+    /* Estilos generales */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fffde7;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #fff176;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #333;
+    }
+    header p {
+      width: 100%;
+      text-align: center;
+      font-size: 1.2em;
+    }
+    .logo {
+      width: 180px;
+      height: 180px;
+      animation: girar 5s linear infinite;
+    }
+    @keyframes girar {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(180deg); }
+    }
+    .pantallas, .recursos, .botones-finales {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 30px;
+    }
+    .pantalla {
+      background-color: #fff9c4;
+      border: 2px solid #fbc02d;
+      border-radius: 12px;
+      padding: 20px;
+      width: 300px;
+      box-shadow: 3px 3px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    h2 {
+      text-align: center;
+      color: #f57f17;
+      margin-top: 40px;
+    }
+    .pantalla h3 {
+      color: #f57f17;
+    }
+    .pantalla p {
+      font-size: 0.95em;
+      line-height: 1.5;
+      color: #333;
+    }
+    .recurso img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    .botones-finales {
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+    .botones-finales button {
+      padding: 45px 80px;
+      font-size: 1em;
+      background-color: #fff9c4;
+      border: 2px solid #fbc02d;
+      color: #333;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+    }
+    .botones-finales button:hover {
+      background-color: #f57f17;
+      transform: scale(1.05);
+    }
+     .slider {
+      width: 80%;
+      height: 350px;
+      margin: 10px auto;
+      border: 6px solid #f57f17;
+      border-radius: 12px;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    .slider img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+      background-color: white;
+    }
+
+    .slider img.active {
+      opacity: 1;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #fff59d;
+      margin-top: 20px;
+    }
+    /* Redes sociales */
+    .social-icons {
+      position: fixed;
+      right: 20px;
+      bottom: 50px;
+      z-index: 1000;
+    }
+    .social-icons a {
+      display: block;
+      margin-bottom: 10px;
+      padding: 15px;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 24px;
+      color: white;
+      transition: all 0.3s ease;
+    }
+    .whatsapp { background-color: #25D366; }
+    .facebook { background-color: #1877F2; }
+    .instagram { background-color: #E4405F; }
+    .tiktok { background-color: #000000; }
+    .social-icons a:hover {
+      transform: scale(1.5);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="Logo Sonrisa Feliz" class="logo">
+    <h1>Sonrisa Feliz</h1>
+    <p>Encuentra paz en medio de la ansiedad</p>
+  </header>
+
+  <!-- Tarjetas informativas -->
+  <div class="pantallas">
+    <div class="pantalla">
+      <h3>¿Qué es la ansiedad?</h3>
+      <p>La ansiedad es una respuesta natural del cuerpo al estrés. Se manifiesta como una sensación de miedo o preocupación intensa. Aunque es normal sentir ansiedad ocasionalmente, cuando se vuelve constante, puede afectar tu bienestar diario.</p>
+    </div>
+    <div class="pantalla">
+      <h3>¿Cómo superar la ansiedad?</h3>
+      <p>Superar la ansiedad implica reconocerla y buscar estrategias para manejarla. Técnicas como la respiración profunda, la meditación y el ejercicio regular pueden ser útiles. Además, hablar con un profesional de la salud mental es fundamental.</p>
+    </div>
+    <div class="pantalla">
+      <h3>¿Por qué es importante buscar ayuda?</h3>
+      <p>Buscar ayuda es un acto de valentía. La ansiedad no define quién eres, y con el apoyo adecuado, puedes recuperar el control de tu vida y encontrar la paz interior que mereces.</p>
+    </div>
+  </div>
+
+  <!-- Recursos visuales -->
+  <h2>Recursos para manejar la ansiedad</h2>
+  <div class="recursos">
+    <div class="recurso">
+      <img src="imagenan1.jpeg" alt="Recurso 1">
+    </div>
+    <div class="recurso">
+      <img src="imagenan2.jpeg" alt="Recurso 2">
+    </div>
+    <div class="recurso">
+      <img src="imagenan3.png" alt="Recurso 3">
+    </div>
+  </div>
+
+  <!-- Botones espirituales -->
+  <h2>Encuentra consuelo espiritual</h2>
+  <div class="botones-finales">
+    <button onclick="window.location.href='ensenanza_ansiedad.html'">Enseñanza</button>
+    <button onclick="window.location.href='oracion_ansiedad.html'">Oración</button>
+    <button onclick="window.location.href='versiculo_ansiedad.html'">Versículo</button>
+    <button onclick="window.location.href='comentarios-ansiedad.html'">Comentarios</button>
+  </div>
+
+  <!-- Carrusel de imágenes -->
+  <div class="slider">
+    <img src="imagenan1.jpeg" class="active" alt="Imagen 1">
+    <img src="imagenan2.jpeg" alt="Imagen 2">
+    <img src="imagenan3.png" alt="Imagen 3">
+    <img src="imagenan4.jpeg" alt="Imagen 3">
+  </div>
+
+  <!-- Redes sociales -->
+  <div class="social-icons">
+    <a href="https://wa.me/1234567890" class="whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://www.facebook.com/tu_pagina" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/tu_perfil" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.tiktok.com/@tu_usuario" class="tiktok" target="_blank"><i class="fab fa-tiktok"></i></a>
+  </div>
+<div style="text-align: center; margin-top: 30px;">
+  <button onclick="window.location.href='indexprincipal.html'" style="padding: 15px 30px; background-color: #f57f17; color: white; font-size: 1.2em; border: none; border-radius: 8px; cursor: pointer; transition: background-color 0.3s;">
+    Volver a la página principal
+  </button>
+</div>
+
+  <!-- Pie de página -->
+  <footer>
+    Sonrisa Feliz &copy; 2025 - Tu bienestar emocional es importante
+  </footer>
+
+  <!-- Script del carrusel -->
+  <script>
+    const slides = document.querySelectorAll('.slider img');
+    let current = 0;
+    setInterval(() => {
+      slides[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+    }, 3500);
+  </script>
+
+</body>
+</html>
